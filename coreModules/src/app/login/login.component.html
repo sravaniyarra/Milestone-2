@@ -1,0 +1,24 @@
+<body>
+<div class="details">
+<form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+    <ul>
+    <h2>Please Sign-in</h2>
+    <li>
+    <label></label></li>
+    <li>
+        <div class="mb-3">
+    <input class="inp" type="email" formControlName="email" name="email" placeholder="Enter email" required>
+     <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Email required!!</span>      
+</div>
+     </li>
+     <li>
+    <label></label>
+     <input class="inp" type="password" formControlName="password" name="passw" placeholder="Password" minlength="8"required>
+     <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Password required!!</span>
+    <button class="butt" [disabled]="!loginForm.value">Sign-in</button>
+</ul>
+<a style="color:#fff;margin: top 10px;" routerLink="/registration">New User? Click here to sign Up!!</a>
+</form>
+</div>
+</body>
+

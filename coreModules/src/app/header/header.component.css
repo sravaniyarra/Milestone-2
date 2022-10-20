@@ -1,0 +1,30 @@
+
+.main {
+    overflow: hidden;
+    background-image: repeating-linear-gradient(rgb(66, 19, 66),rgb(192, 46, 192))
+  }
+  
+  .main a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .main a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .main a.active {
+    background-color: rgb(186, 108, 19);
+    color: white;
+  }
+
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content:flex-end;
+    }

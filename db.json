@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "SignUpUsers": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "username": "sravani",
+      "email": "sravani",
+      "password": "@Sravani55",
+      "id": 2
+    },
+    {
+      "username": "sravani",
+      "email": "sravani",
+      "password": "sravani55",
+      "id": 3
+    },
+    {
+      "username": "sravani",
+      "email": "sravani@gmail.com",
+      "password": "@Sravani55",
+      "id": 4
+    },
+    {
+      "username": "sravani11",
+      "email": "sravaniyarra55@gmail.com",
+      "password": "sravani",
+      "id": 5
+    },
+    {
+      "username": "sravani11",
+      "email": "sravaniyarra55@gmail.com",
+      "password": "sravani",
+      "id": 6
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

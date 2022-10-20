@@ -1,0 +1,106 @@
+<div class="row" > 
+  <div class="col">
+
+    <!-- form -->
+    <div class="container-sm containerclass">
+    <div class="card">
+      <div class="card-header cardheader">
+        Form Data
+        <div class="row">
+          <button class="btn btn-success" style="justify-content:flex-end; ">Add New</button>
+        </div>
+      </div>
+      <div class="card-body">
+         <h5 class="card-title">Enter the form details</h5>
+         <form [formGroup]="formdata" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col">
+              <label class="labelclass">First Name</label>
+              <input type="text" formControlName = "firstname" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <label class="labelclass">Last Name</label>
+              <input type="text" formControlName = "lastname" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+            <div class="col">
+              <label class="labelclass">Email</label>
+              <input type="text" formControlName = "email" class="form-control" placeholder="Email" aria-label="email">
+            </div>
+          </div>
+          <div class="row" style="padding-top:5px ;">
+            <div class="col">
+              <label class="labelclass">Age</label>
+              <input type="number" formControlName = "age" class="form-control" placeholder="Age" aria-label="age">
+            </div>
+            <div class="col">
+              <label class="labelclass">Mobile Number</label>
+              <input type="number" formControlName = "mobilenumber" class="form-control" placeholder="Mobile number" aria-label="age">
+            </div>
+            <div class="col">
+              <label class="labelclass">Date of Birth</label>
+              <input type="number" formControlName = "dateOfBirth" class="form-control" placeholder="Date of Birth" aria-label="age">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="labelclass">Native Place</label>
+              <input type="text" formControlName = "place" class="form-control" placeholder="place" aria-label="age">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+            <div class="col" >
+              <button class="btn btn-danger" (click)= "onCancel()" type="button">Cancel</button>
+            </div>
+            <div class="col" *ngIf="isedit">
+              <button class="btn btn-success" type="button" (click)="onUpdate()">Update</button>
+            </div>
+            </div>
+          
+         </form>
+      </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="col" style="padding-top: 5px;">
+      <table class="table table-bordered" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Place</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let userdata of listOfData; let i = index">
+
+            <th scope="row">{{i}}</th>
+            <td>{{userdata?.firstname}}</td>
+            <td>{{userdata?.lastname}}</td>
+            <td>{{userdata?.age}}</td>
+            <td>{{userdata?.place}}</td>
+            <td (click)="onEdit(i)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg>
+          </td>
+            <td (click) = "onDelete(userdata,i)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+              </svg>
+            </td>
+          
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+</div>

@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "bookName": "jbkjbj",
+      "details": "wkejbfikb",
+      "publications": "2022-09-29",
+      "branch": "ebfi",
+      "price": 0,
+      "quantity": 1,
+      "bookPhoto": "C:\\fakepath\\Major_Teaer_Screengrab_12042021_1200_0.jpg"
+    },
+    {
+      "id": 3,
+      "bookName": "ewhv",
+      "details": "efref",
+      "publications": "2022-09-28",
+      "branch": "rf4r",
+      "price": 0,
+      "quantity": 12,
+      "bookPhoto": "C:\\fakepath\\Picture3.png"
+    },
+    {
+      "id": 4,
+      "bookName": "kwejbf",
+      "details": "wejfnjn",
+      "publications": "2022-09-29",
+      "branch": "efn",
+      "price": 0,
+      "quantity": 12,
+      "bookPhoto": "C:\\fakepath\\Major_Teaer_Screengrab_12042021_1200_0.jpg"
+    },
+    {
+      "id": 5,
+      "bookName": "skbfj",
+      "details": "eufgiubf",
+      "publications": "2022-09-29",
+      "branch": "e432",
+      "price": 0,
+      "quantity": 12,
+      "bookPhoto": "C:\\fakepath\\Picture3.png"
+    },
+    {
+      "id": 6,
+      "bookName": "sravani",
+      "details": "@Sravani55",
+      "publications": "",
+      "branch": "rfnjrwnf",
+      "price": 0,
+      "quantity": null,
+      "bookPhoto": ""
+    },
+    {
+      "id": 7,
+      "bookName": "iqwbdu",
+      "details": "dihvbyue",
+      "publications": null,
+      "branch": "eudygve2yg",
+      "price": 0,
+      "quantity": 2,
+      "bookPhoto": null
+    },
+    {
+      "id": 8,
+      "bookName": null,
+      "details": null,
+      "publications": null,
+      "branch": null,
+      "price": 0,
+      "quantity": null,
+      "bookPhoto": null
+    },
+    {
+      "bookName": "sravani",
+      "details": "@Sravani55",
+      "publications": "",
+      "branch": "",
+      "price": 0,
+      "quantity": "",
+      "bookPhoto": "",
+      "id": 9
+    },
+    {
+      "bookName": "skbfj",
+      "details": "eufgiubf",
+      "publications": "2022-09-29",
+      "branch": "e432",
+      "price": 0,
+      "quantity": 12,
+      "bookPhoto": "C:\\fakepath\\Picture3.png",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
